@@ -47,59 +47,6 @@ public class MainActivity extends AppCompatActivity {
     public void tellJoke(View view) {
         Toast.makeText(this, R.string.main_version, Toast.LENGTH_LONG).show();
 
-        /*final ProgressBar progressBar = findViewById(R.id.progress);
-
-        new EndPointsAsyncTask() {
-            @Override
-            protected void onPreExecute() {
-                super.onPreExecute();
-                progressBar.setVisibility(View.VISIBLE);
-            }
-
-            @Override
-            protected void onPostExecute(final String output) {
-                interstitialAd = new InterstitialAd(MainActivity.this);
-                interstitialAd.setAdUnitId(getString(R.string.interstitial_ad_test_id));
-                interstitialAd.loadAd(new AdRequest.Builder().build());
-                interstitialAd.setAdListener(new AdListener() {
-                    @Override
-                    public void onAdLoaded() {
-                        // Code to be executed when an ad finishes loading.
-                        interstitialAd.show();
-
-                    }
-
-                    @Override
-                    public void onAdFailedToLoad(int errorCode) {
-                        // Code to be executed when an ad request fails.
-                        Intent myIntent = new Intent(getApplicationContext(), Renderer.class);
-                        myIntent.putExtra("jokeString", output);
-                        progressBar.setVisibility(View.INVISIBLE);
-                        startActivity(myIntent);
-                    }
-
-                    @Override
-                    public void onAdOpened() {
-                        // Code to be executed when the ad is displayed.
-                    }
-
-                    @Override
-                    public void onAdLeftApplication() {
-
-                        // Code to be executed when the user has left the app.
-                    }
-
-                    @Override
-                    public void onAdClosed() {
-                        // Code to be executed when when the interstitial ad is closed.
-                        Intent myIntent = new Intent(getApplicationContext(), Renderer.class);
-                        myIntent.putExtra("jokeString", output);
-                        progressBar.setVisibility(View.INVISIBLE);
-                        startActivity(myIntent);
-                    }
-                });
-            }
-        }.execute();*/
     }
 
 
