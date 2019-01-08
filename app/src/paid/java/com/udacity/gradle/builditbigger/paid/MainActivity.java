@@ -11,8 +11,8 @@ import android.widget.ProgressBar;
 import com.udacity.gradle.builditbigger.R;
 import com.udacity.gradle.builditbigger.EndPointsAsyncTask;
 
-import com.dennis.tsuma.javajokeslibrary.MyJokes;
 import com.dennis.tsuma.jokesrenderer.Renderer;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this,R.string.paid_version, Toast.LENGTH_LONG).show();
+
     }
 
 

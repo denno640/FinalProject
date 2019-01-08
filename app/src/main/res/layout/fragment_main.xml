@@ -41,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="tellJoke"
+        android:id="@+id/button"
         android:text="@string/button_text"
         android:layout_marginTop="@dimen/dimen_8dp"
         android:layout_marginStart="@dimen/dimen_8dp"

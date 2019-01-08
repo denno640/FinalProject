@@ -6,4 +6,7 @@
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="test_ap_id">ca-app-pub-3940256099942544~3347511713</string>
     <string name="interstitial_ad_test_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="paid_version">Welcome to the paid version of the App</string>
+    <string name="free_version">Welcome to the free version of the App</string>
+    <string name="main_version">This is the main version. what do we do with this?</string>
 </resources>

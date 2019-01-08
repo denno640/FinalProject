@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">JokesRenderer</string>
+    <string name="joke_error">error getting joke</string>
 </resources>

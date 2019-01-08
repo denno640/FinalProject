@@ -2,6 +2,7 @@ package com.udacity.gradle.builditbigger;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.extensions.android.json.AndroidJsonFactory;
@@ -14,6 +15,7 @@ import java.io.IOException;
 public class EndPointsAsyncTask extends AsyncTask<Void, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
+    private static final String TAG = EndPointsAsyncTask.class.getSimpleName();
 
     @Override
     protected String doInBackground(Void... voids) {
@@ -39,9 +41,11 @@ public class EndPointsAsyncTask extends AsyncTask<Void, Void, String> {
         }
 
         try {
-            return myApiService.sayHi(ApplicationName).execute().getData();
+            return myApiService.sayHi(ApplicationName).execute().getJokeString();
         } catch (IOException e) {
-            return e.getMessage();
+            Log.d(TAG,e.getMessage());
+            //fixed AsyncTaskTest. now when there is an error an empty string is returned
+            return "";
         }
     }
 
